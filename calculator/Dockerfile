@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY calc.py /app/calc.py
 
-CMD ["python3","calc.py"]
+CMD ["python3","-u","calc.py"]
