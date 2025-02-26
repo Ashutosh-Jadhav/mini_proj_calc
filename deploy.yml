@@ -21,5 +21,5 @@
         state: started
 
     - name: Running container
-      shell: sudo docker run -it -d name calc ashutoshj/calc
+      shell: docker run -it -d --name calc ashutoshj/calc
     
