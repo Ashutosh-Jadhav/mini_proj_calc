@@ -17,6 +17,14 @@ pipeline {
             }
         }
 
+        stage('test') {
+            steps {
+                script {
+                    sh 'python3 -m unittest test.py'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
